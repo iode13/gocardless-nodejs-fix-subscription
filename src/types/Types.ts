@@ -4217,6 +4217,10 @@ export interface Subscription {
   // resource was created.
   created_at?: string;
 
+  // The id of the customer associated with this subscription.
+  // Starts with "CU"
+  customer?:string;
+
   // [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217#Active_codes) currency
   // code. Currently "AUD", "CAD", "DKK", "EUR", "GBP", "NZD", "SEK" and "USD"
   // are supported.
